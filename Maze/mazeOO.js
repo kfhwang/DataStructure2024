@@ -37,7 +37,7 @@ class Point {
 
 class Maze{
     constructor(_maze, _start, _end, _map){
-        this.maze=_maze;
+        this.maze=JSON.parse(JSON.stringify(_maze));
         this.start=_start;
         this.end=_end;
         this.Stack=[];
