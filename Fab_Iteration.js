@@ -1,3 +1,4 @@
+var fabAll=[]
 function Fab(n) {
     if (n <= 1) {
         return 1;
@@ -9,6 +10,7 @@ function Fab(n) {
 
     for (let i = 2; i <= n; i++) {
         fib = a + b; // Calculate current Fibonacci number
+        fabAll.push(fib);
         a = b;       // Move forward in the series
         b = fib;     // Update the previous Fibonacci number
     }
